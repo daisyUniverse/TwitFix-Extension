@@ -1,0 +1,19 @@
+{
+    "name": "TwitFix Extension",
+    "description": "Add's Twitfix related copy options to Twitter's video context menu",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": [
+        "clipboardWrite",
+        "activeTab"
+
+    ],
+    "homepage_url": "https://github.com/robinuniverse/TwitFix",
+    "developer": {
+        "url": "https://github.com/robinuniverse/TwitFix"
+    },
+    "content_scripts": [{
+        "matches": ["*://twitter.com/*"],
+        "js": ["main_min.js"]
+    }]
+}
