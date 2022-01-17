@@ -13,6 +13,6 @@
     },
     "content_scripts": [{
         "matches": ["*://twitter.com/*"],
-        "js": ["main_min.js"]
+        "js": ["main.js"]
     }]
 }
