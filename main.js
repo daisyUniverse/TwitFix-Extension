@@ -15,7 +15,7 @@ document.addEventListener('contextmenu', (e) => {
                 background-color: rgba(255, 255, 255, 0.03);
             }
             body[style*="background-color: rgb(255, 255, 255)"] .fxtwitterclass:hover,
-            body[style*="background-color:  #FFFFFF"] .fxtwitterclass:hover {
+            body[style*="background-color: #FFFFFF"] .fxtwitterclass:hover {
                 background-color: rgba(0, 0, 0, 0.03);
             }
         `;
