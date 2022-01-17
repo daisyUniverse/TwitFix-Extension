@@ -10,13 +10,12 @@ document.addEventListener('contextmenu', (e) => {
             .fxtwitterclass {
                 background-color: unset;
             }
-            
-            body[style*="background-color: rgb(0, 0, 0)"] .fxtwitterclass:hover,
+            body[style*="background-color: rgb(21, 32, 43)"] .fxtwitterclass:hover,
             body[style*="background-color: #15202B"] .fxtwitterclass:hover {
                 background-color: rgba(255, 255, 255, 0.03);
             }
-            
-            body[style*="background-color: rgb(255, 255, 255)"] .fxtwitterclass:hover {
+            body[style*="background-color: rgb(255, 255, 255)"] .fxtwitterclass:hover,
+            body[style*="background-color:  #FFFFFF"] .fxtwitterclass:hover {
                 background-color: rgba(0, 0, 0, 0.03);
             }
         `;
