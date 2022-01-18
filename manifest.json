@@ -12,7 +12,10 @@
         "url": "https://github.com/robinuniverse/TwitFix-Extension"
     },
     "content_scripts": [{
-        "matches": ["*://twitter.com/*"],
+        "matches": [
+            "*://twitter.com/*",
+            "*://mobile.twitter.com/*"
+        ],
         "js": ["main.js"]
     }]
 }
