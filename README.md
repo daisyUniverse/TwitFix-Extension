@@ -1,14 +1,18 @@
 <p align="center">
-<h1>TwitFix Extension</h1>
-
-This is a pretty cool browser Extension made by [Doruk](https://github.com/DorukSega) that simply adds the option to copy a TwitFix link to your clipboard when right clicking any given video on twitter
-
-![Showcase Gif](showcase.gif)
-
-[Get it on Firefox](https://addons.mozilla.org/en-US/firefox/addon/twitfix-extension/) • Get it on Chrome (Coming soon!)
-
-This extension is currently undergoing review on the Chrome and Firefox extension stores, but once those are complete I will provide install links here :)
-
-This project is licensed under the [WTFNONPL](https://github.com/robinuniverse/WTFNONPL)
-
+  <h1 align="center">TwitFix ⭐ Extension</h1>
+</p>
+<p align="center">
+  Adds a <b>Copy TwitFix Link</b> button to Twitter videos!
+</p>
+<p align="center">
+  <img width="591" height="508" src="showcase.gif">
+</p>
+<p align="center">
+  <a href="https://addons.mozilla.org/en-US/firefox/addon/twitfix-extension/">Get it on Firefox</a> • Get it on Chrome (Coming soon!)
+</p>
+<p align="center">
+  This project is licensed under the <a href="https://github.com/robinuniverse/WTFNONPL">WTFNONPL</a>
+</p>
+<p align="center">
+  made by <a href="https://github.com/DorukSega">Doruk</a>
 </p>
