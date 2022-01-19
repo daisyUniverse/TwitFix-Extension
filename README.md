@@ -5,7 +5,7 @@
     Adds a <b>Copy TwitFix Link</b> button to Twitter videos!
 </p>
 <p align="center">
-    <img width="591" height="508" src="showcase.gif" style="height: auto;">
+    <img width="591" height="508" src="showcase.gif">
 </p>
 <p align="center">
     <a href="https://addons.mozilla.org/en-US/firefox/addon/twitfix-extension/">Get it on Firefox</a> • Get it on Chrome (Coming soon!)
