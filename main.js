@@ -7,9 +7,10 @@ document.addEventListener('contextmenu', (e) => { //event for right click
     const varray = Array.from(document.querySelectorAll("div[data-testid='videoPlayer']")).filter(i => i.contains(e.target)); //this is array of targets
     const videoPlayer = varray[0];
     const article = specparent(videoPlayer, "article");
-    const atags = Array.from(article.querySelectorAll("a"));
-    const url = atags.filter(a => a.href.includes("status"))[0].href; //url is pulled from a A tag inside the tweet (article)
-    if (varray.length > 0 && atags.filter(a => a.href.includes("broadcasts")).length < 1 && videoPlayer != article.querySelector("div[role=\"link\"] [data-testid=\"videoPlayer\"]")) { //checks if rclick was over video player 
+
+    if (varray.length > 0 && Array.from(article.querySelectorAll("a")).filter(a => a.href.includes("broadcasts")).length < 1 && videoPlayer != article.querySelector("div[role=\"link\"] [data-testid=\"videoPlayer\"]")) { //checks if rclick was over video player 
+        const atags = Array.from(article.querySelectorAll("a"));
+        const url = atags.filter(a => a.href.includes("status"))[0].href; //url is pulled from a A tag inside the tweet (article)
         const css = ` 
             .fxtwitterclass {
                 background-color: unset;
