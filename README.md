@@ -8,7 +8,7 @@
     <img width="591" height="508" src="showcase.gif">
 </p>
 <p align="center">
-    <a href="https://addons.mozilla.org/en-US/firefox/addon/twitfix-extension/">Get it on Firefox</a> • Get it on Chrome (Coming soon!)
+    <a href="https://addons.mozilla.org/en-US/firefox/addon/twitfix-extension/">Get it on Firefox</a> • Get it on Chrome (Coming eventually.)
 </p>
 <p align="center">
     This project is licensed under the <a href="https://github.com/robinuniverse/WTFNONPL">WTFNONPL</a>
