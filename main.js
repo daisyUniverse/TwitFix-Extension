@@ -42,19 +42,17 @@ document.addEventListener('contextmenu', (e) => { //event for right click
                 opt1.querySelector("span").textContent = "Copy Twitfix Link"; //item text
                 opt1.classList.add("fxtwitterclass"); //class
                 opt1.addEventListener("click",
-                    (e) => {
-                        navigator.clipboard.writeText(url.replace("https://", "https://fx")); //adds click event and using navigator api, copies the url to clipboard);
-                        e.target.parentElement.remove();
-                    });
+                    () =>
+                        navigator.clipboard.writeText(url.replace("https://", "https://fx")) //adds click event and using navigator api, copies the url to clipboard
+                );
 
                 const opt2 = ogitem.cloneNode(true); //same as above
                 opt2.querySelector("span").textContent = "Copy MP4 Link";
                 opt2.classList.add("fxtwitterclass");
                 opt2.addEventListener("click",
-                    (e) => {
+                    () =>
                         navigator.clipboard.writeText(url.replace("https://", "https://fx").concat(".mp4"))
-                        e.target.parentElement.remove();
-                    });
+                );
 
                 flex.append(opt1); //appends to container/parent
                 flex.append(opt2);
