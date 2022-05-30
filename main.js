@@ -1,4 +1,6 @@
 var inter; //interval 
+const twitfixLink = "https://twxtter.com/";
+const serverName = "Twxtter";
 
 function specparent(a, b) { //returns parent element with specific tag, a is child and b is parent's tag
     for (b = b.toLowerCase(); a && a.parentNode;)
@@ -39,11 +41,11 @@ document.addEventListener('contextmenu', (e) => { //event for right click
             const flex = ogitem.parentElement; //container/parent
             if (!flex.contains(flex.querySelector(".fxtwitterclass"))) { //checks if fxtwitter items are already there
                 const opt1 = ogitem.cloneNode(true); //clones a copy of ogitem
-                opt1.querySelector("span").textContent = "Copy Twitfix Link"; //item text
+                opt1.querySelector("span").textContent = `Copy ${serverName} Link`; //item text
                 opt1.classList.add("fxtwitterclass"); //class
                 opt1.addEventListener("click",
                     () => {
-                        navigator.clipboard.writeText(url.replace("https://", "https://fx")) //adds click event and using navigator api, copies the url to clipboard
+                        navigator.clipboard.writeText(url.replace("https://", twitfixLink)) //adds click event and using navigator api, copies the url to clipboard
                         document.body.click();
                     }
                 );
@@ -53,7 +55,7 @@ document.addEventListener('contextmenu', (e) => { //event for right click
                 opt2.classList.add("fxtwitterclass");
                 opt2.addEventListener("click",
                     () => {
-                        navigator.clipboard.writeText(url.replace("https://", "https://fx").concat(".mp4"));
+                        navigator.clipboard.writeText(url.replace("https://", twitfixLink).concat(".mp4"));
                         document.body.click();
                     }
                 );
@@ -108,10 +110,10 @@ function shareAppend() {
                 const menu = document.querySelector("div[role*='menu']");
                 if (!flex.contains(flex.querySelector(".fxtwitterclass"))) { //checks if fxtwitter items are already there
                     const opt1 = ogitem.cloneNode(true); //clones a copy of ogitem
-                    opt1.querySelector("span").textContent = "Copy Twitfix link"; //item text
+                    opt1.querySelector("span").textContent = "Copy ${serverName} link"; //item text
                     opt1.classList.add("fxtwitterclass"); //class
                     opt1.addEventListener("click", () => {
-                        navigator.clipboard.writeText(url.replace("https://", "https://fx"));
+                        navigator.clipboard.writeText(url.replace("https://", twitfixLink));
                         menu.remove();
                     }); //adds click event and using navigator api, copies the url to clipboard);
                     flex.insertBefore(opt1, ogitem.nextSibling); //appends to container/parent
