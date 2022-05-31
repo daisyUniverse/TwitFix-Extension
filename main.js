@@ -110,7 +110,7 @@ function shareAppend() {
                 const menu = document.querySelector("div[role*='menu']");
                 if (!flex.contains(flex.querySelector(".fxtwitterclass"))) { //checks if fxtwitter items are already there
                     const opt1 = ogitem.cloneNode(true); //clones a copy of ogitem
-                    opt1.querySelector("span").textContent = "Copy ${serverName} link"; //item text
+                    opt1.querySelector("span").textContent = `Copy ${serverName} link`; //item text
                     opt1.classList.add("fxtwitterclass"); //class
                     opt1.addEventListener("click", () => {
                         navigator.clipboard.writeText(url.replace("https://", twitfixLink));
