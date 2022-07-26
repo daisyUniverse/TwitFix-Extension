@@ -1,6 +1,6 @@
 var inter; //interval 
-const twitfixLink = "https://twxtter.com/";
-const serverName = "Twxtter";
+const twitfixLink = "http://fxtwitter.com/";
+const serverName = "FixTweet";
 
 function specparent(a, b) { //returns parent element with specific tag, a is child and b is parent's tag
     for (b = b.toLowerCase(); a && a.parentNode;)
@@ -66,7 +66,7 @@ document.addEventListener('contextmenu', (e) => { //event for right click
         }
         //Interval that checks every 4ms after rclick, waits until twitter's context menu appears then applies change and finally stops
         //Todo: Find a better way to handle this, current imp. can cause potential bugs
-        var step = 0; //added so it stops after a while
+        let step = 0; //added so it stops after a while
         if (!inter) {
             inter = setInterval(() => {
                 step += 1;
@@ -120,7 +120,7 @@ function shareAppend() {
                 }
             }
             //Todo: Find a better way to handle this, current imp. can cause potential bugs
-            var step = 0; //added so it stops after a while
+            let step = 0; //added so it stops after a while
             if (!inter) {
                 inter = setInterval(() => {
                     step++;
