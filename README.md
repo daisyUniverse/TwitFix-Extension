@@ -8,7 +8,7 @@
     <img width="591" height="508" src="showcase.gif">
 </p>
 <p align="center">
-    <a href="https://addons.mozilla.org/en-US/firefox/addon/twitfix-extension/">Get it on Firefox</a> • Get it on Chrome (Coming eventually.)
+    To use the extension, you need to manually install it from the git repo and link it with your browser of choice ¯\_(ツ)_/¯ 
 </p>
 <p align="center">
     This project is licensed under the <a href="https://github.com/robinuniverse/WTFNONPL">WTFNONPL</a>
